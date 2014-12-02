@@ -7,7 +7,7 @@ ADD rbenv.sh /etc/drone.d/
 RUN export PATH=$PATH:/home/ubuntu/.rbenv/bin && \
     cd ~/.rbenv/plugins/ruby-build            && \
     git pull                                  && \
-    export RBENV_VERSION=2.1.0                && \
+    export RBENV_VERSION=2.1.4                && \
     eval "$(rbenv init -)"                    && \
     CC=gcc rbenv install 2.1.4                && \
     rbenv rehash                              && \
